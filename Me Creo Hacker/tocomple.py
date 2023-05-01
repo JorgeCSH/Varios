@@ -89,7 +89,8 @@ def desvEstandar(datos, purgador):
 
 
 def recolector(starter):
-    if not starter: 
+    purgador = int(starter)
+    if purgador == 1: 
         return None
     else:
         tot = []
