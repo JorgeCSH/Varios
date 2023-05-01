@@ -86,5 +86,19 @@ def desvEstandar(datos, purgador):
         desviacion = 'agilao'
     return desviacion 
 
-notas = [4.5, 5.8, 6.7]
-print(desvEstandar(notas, 0))
+
+
+def recolector(starter):
+    if not starter: 
+        return None
+    else:
+        tot = []
+        valori = input('Ingrese valor ')
+        if not valori:
+            return tot
+        else: 
+            valora = float(valori)
+            nTot = tot + [valora]
+            tot = nTot
+            return tot
+
