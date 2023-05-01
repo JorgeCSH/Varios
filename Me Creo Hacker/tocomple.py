@@ -88,18 +88,25 @@ def desvEstandar(datos, purgador):
 
 
 
-def recolector(starter):
-    purgador = int(starter)
-    if purgador == 1: 
-        return None
-    else:
-        tot = []
-        valori = input('Ingrese valor ')
-        if not valori:
-            return tot
-        else: 
+
+# Esta abominacion del demonio se deberia de encargar de iterar los datos solicitados.
+# Recibe la cantidad de datos que le vas a meter por la raja y te pide esa cantidad 
+# de veces los datos
+def dialogo(cantDatos):
+    canWena = int(cantDatos)
+    tot = []
+    i = 0
+    while i<canWena:
+        if i == canWena:
+            break
+        else:
+            valori = input('Ingrese Valor ')
             valora = float(valori)
-            nTot = tot + [valora]
-            tot = nTot
-            return tot
+            tota = tot +[valora]
+            tot = tota
+            i = i+1
+        total = tot
+    return total
+    
+    
 
