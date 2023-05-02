@@ -6,6 +6,7 @@
 import numpy as np
 #import matplotlib as plt
 import math
+import humanistas as lenguaje
 
 
 
@@ -88,25 +89,42 @@ def desvEstandar(datos, purgador):
 
 
 
-
-# Esta abominacion del demonio se deberia de encargar de iterar los datos solicitados.
-# Recibe la cantidad de datos que le vas a meter por la raja y te pide esa cantidad 
-# de veces los datos
-def dialogo(cantDatos):
-    canWena = int(cantDatos)
-    tot = []
+def regresion(OX, OY):
+    cantidad = len(OX)
+    xo = lenguaje.racista(OX)
+    xocuadrado = []
+    yo = lenguaje.racista(OY)
+    sumaxy = [] 
+    xi = sum(xo)
+    yi = sum(yo)
     i = 0
-    while i<canWena:
-        if i == canWena:
+    j = 0
+    while i <len(xo):
+        if i == len(xo):
             break
         else:
-            valori = input('Ingrese Valor ')
-            valora = float(valori)
-            tota = tot +[valora]
-            tot = tota
-            i = i+1
-        total = tot
-    return total
-    
-    
+            oxo = xocuadrado + [xo[i]**2]
+            xocuadrado = oxo
+        xo2 = xocuadrado
+    while j <len(xo):
+        if j == len(xo):
+            break
+        else:
+            oxy = sumaxy + [(xo[j])*(yo[j])]
+            sumaxy = oxy
+        xy = sumaxy           
+    numa = xi*yi - cantidad*(sum(xy))
+    dena = ((xi)**2) - (cantidad*(sum(xo2)))
+    a = numa/dena
+    numb = yi - a*xi
+    denb = cantidad
+    b = numb/denb
+    ajuste = np.array([a, b])
+    return ajuste
 
+ejex = ['14.222', '17.493', '21.477', '26.104', '27.611', '33.506', '41.188', '40.953']
+ejey = ['95.065', '113.860', '138.663', '155.955', '172.485', '196.024', '220.230', '254.771']
+popo = regresion(ejex, ejey)
+aa = popo
+print(popo)
+         
