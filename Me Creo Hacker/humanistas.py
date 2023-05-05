@@ -7,7 +7,6 @@ import numpy as np
 import math
 
 
-
 # Funcion que toma lista que deberia ser numero pero estan en str.
 # Esta para casos como los inputs, en que solo reciben (y si no los transforman)
 # en str.
@@ -23,7 +22,6 @@ def racista(lista):
             tetas = poronga
             i = i+1
     return tetas
-
 
 
 
