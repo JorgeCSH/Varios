@@ -7,6 +7,7 @@
 import numpy as np
 import matplotlib as plt
 import math
+import humanistas as lenguaje
 
 
 def capacitancia(carga, diferenciaPoto):
@@ -53,16 +54,25 @@ def capacitanciaEq(totalcapac, tipox, i=0):
                 ironMan = nib
                 i = i+1
             cs = ironMan
-    n = largo-1
-    damomentumXD = 0
-    while i < n:
-        if i == n:
-            break
-        else: 
-            lacochina = damomentumXD + float(cs[i])
-            damomentumXD = lacochina
-            i = i+1
-        sex = damomentumXD
-        print(sex)
+    equivalente = sum(cs)
+    if tipo == 0:
+        ceq = 1/equivalente
+        return ceq
+    elif tipo == 1:
+        ceq = equivalente 
+        return ceq
+    else: 
+        return 'momento xd'
 
-print(capacitanciaEq([2, 44, 3, 5, 3], 0))
+valores = lenguaje.dialogo(5)
+tipo = input('Tipo de conexion ')
+panconpebre = capacitanciaEq(valores,tipo)
+print(panconpebre)
+#print(capacitanciaEq(['2', '44', '3', '5', '3'], '0'))
+
+
+
+
+
+
+
