@@ -17,5 +17,7 @@ def capacitancia(carga, diferenciaPoto):
     opa = [C, '[F] "Faradias"' ]
     return opa
 
+print(capacitancia('100', '2'))
+
 
 
