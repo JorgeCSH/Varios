@@ -66,10 +66,10 @@ def capacitanciaEq(totalcapac, tipox, i=0):
     else: 
         return 'momento xd'
 
-#valores = lenguaje.dialogo(5)
-#tipo = input('Tipo de conexion ')
-#panconpebre = capacitanciaEq(valores,tipo)
-#print(panconpebre)
+valores = lenguaje.dialogo(2)
+tipo = input('Tipo de conexion ')
+panconpebre = capacitanciaEq(valores,tipo)
+print(panconpebre)
 #print(capacitanciaEq(['2', '44', '3', '5', '3'], '0'))
 
 ####################################################################################################################
@@ -160,13 +160,13 @@ def cargas(t, R, V, C, medicion):
     return carga
         
 # Las formad: 0 para  forma general, 1 para corriente, 2 para caida voltaje condensador, 3 caida caida voltaje resistencia
-formomoa = int(input('medicion que satanica deseada '))
-ts = float(input('ingrese tiempo '))
-rs = float(input('ingrese resistencia'))
-vs = float(input('ingrese voltaje '))
-cs = float(input('ingrese capacitancia '))
-cargaxconchoclo = cargas(ts, rs, vs, cs, formomoa)
-print('carga seria', cargaxconchoclo)
+#formomoa = int(input('medicion que satanica deseada '))
+#ts = float(input('ingrese tiempo '))
+#rs = float(input('ingrese resistencia'))
+#vs = float(input('ingrese voltaje '))
+#cs = float(input('ingrese capacitancia '))
+#cargaxconchoclo = cargas(ts, rs, vs, cs, formomoa)
+#print('carga seria', cargaxconchoclo)
 
 
 def descarga(cargaInicial, t, r,c):
@@ -174,10 +174,10 @@ def descarga(cargaInicial, t, r,c):
     descargat = cargaInicial*feo
     return feo
 
-tss = float(input('ingrese tiempo '))
-rss = float(input('ingrese resistencia'))
-aaa = float(input('ingrese capacitancia '))
-caca = float(input('ingrese carga inicial '))
-descargaso = descarga(caca, tss, rss, aaa)
-print('la descarga en tiempo t seria ', descargaso)
+#tss = float(input('ingrese tiempo '))
+#rss = float(input('ingrese resistencia'))
+#aaa = float(input('ingrese capacitancia '))
+#caca = float(input('ingrese carga inicial '))
+#descargaso = descarga(caca, tss, rss, aaa)
+#print('la descarga en tiempo t seria ', descargaso)
 
