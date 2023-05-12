@@ -66,10 +66,10 @@ def capacitanciaEq(totalcapac, tipox, i=0):
     else: 
         return 'momento xd'
 
-valores = lenguaje.dialogo(2)
-tipo = input('Tipo de conexion ')
-panconpebre = capacitanciaEq(valores,tipo)
-print(panconpebre)
+# valores = lenguaje.dialogo(2)
+# tipo = input('Tipo de conexion ')
+# panconpebre = capacitanciaEq(valores,tipo)
+# print(panconpebre)
 #print(capacitanciaEq(['2', '44', '3', '5', '3'], '0'))
 
 ####################################################################################################################
@@ -102,7 +102,7 @@ def operadorError(valor1, valor2, operacion):
     cateta2 = (b/bb)**2                                                                   
     operro1 = np.sqrt(cateto1 + cateto2)                                                    
     operro2 = np.sqrt(cateta1 + cateta2)                                                    
-    matraca = lenguaje.erroropera(aa, bb, operro1, operro2, operacion)                      
+    matraca = italiano.erroropera(aa, bb, operro1, operro2, operacion)                      
     return matraca  
 
 #print('Las operaciones son: ')
@@ -157,16 +157,20 @@ def cargas(t, R, V, C, medicion):
         carga = V*expresionSatanica(t,R,C,forma=1)
     else: 
         'xd'
-    return carga
-        
+    return carga        
 # Las formad: 0 para  forma general, 1 para corriente, 2 para caida voltaje condensador, 3 caida caida voltaje resistencia
 #formomoa = int(input('medicion que satanica deseada '))
 #ts = float(input('ingrese tiempo '))
-#rs = float(input('ingrese resistencia'))
+#rs = float(input('ingrese resistencia '))
 #vs = float(input('ingrese voltaje '))
 #cs = float(input('ingrese capacitancia '))
 #cargaxconchoclo = cargas(ts, rs, vs, cs, formomoa)
 #print('carga seria', cargaxconchoclo)
+
+cargaxconchoclo = cargas(10*(1000000*0.0001), 1000000, 12, 0.0001, 2)
+print('carga seria', cargaxconchoclo)
+cargaxconchoclo = cargas(5*(1000000*0.0001), 1000000, 12, 0.0001, 2)
+print('carga seria', cargaxconchoclo)
 
 
 def descarga(cargaInicial, t, r,c):
@@ -180,4 +184,8 @@ def descarga(cargaInicial, t, r,c):
 #caca = float(input('ingrese carga inicial '))
 #descargaso = descarga(caca, tss, rss, aaa)
 #print('la descarga en tiempo t seria ', descargaso)
+
+####################################################################################################################
+
+
 

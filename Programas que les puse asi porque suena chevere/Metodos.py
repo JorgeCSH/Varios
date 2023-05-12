@@ -8,12 +8,26 @@
 # Librerias
 # No puede haber un coigo descente sin librerias....(alerta de flojo jeje) 
 import numpy as np
-import matplotlib as plt
-import math
-import sympy as sym
+import matplotlib.pyplot as plt
+import pandas as pd
+# import math
+# import sympy as sym
 import tocomple as italiano
 import humanistas as lenguaje
 ############################################################################################################################
+
+####################################################################################################################
+# Aca iria info total
+
+#oltajeCondensador = [4.40, 7.25, 8.70, 9.69, 10.22, 10.46, 10.63, 10.72, 10.79, 10.84, 10.86, 10.87]
+#voltajeResistencia = [7.46, 4.63, 2.67, 1.55, 0.98, 0.58, 0.35, 0.24, 0.19, 0.13, 0.11, 0.9]
+#datos = np.array([voltajeCondensador, voltajeResistencia])
+#print(len(voltajeCondensador))
+#print(len(voltajeResistencia))
+#df_Voltaje = pd.DataFrame({'Tiempo (s)': [ '[0, 5]', '[5, 10]', '[10, 15]', '[15, 20]', '[20, 25]', '[25, 30]', '[30, 35]', '[35, 40]', '[40, 45]', '[45, 50]', '[50, 55]', '[55, 60]'], 'Voltaje Condensador:' :datos[0], 'Voltaje Resistencia':datos[1]})
+#print(df_Voltaje)
+
+####################################################################################################################
 
 ############################################################################################################################
 # Que iria faltando: 
@@ -69,6 +83,8 @@ def operadorError(valor1, valor2, operacion):
 ############################################################################################################################
 
 ############################################################################################################################
+# Graficar 
+
 
 ############################################################################################################################
 
