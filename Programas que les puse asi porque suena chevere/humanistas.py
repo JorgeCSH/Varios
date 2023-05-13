@@ -1,11 +1,16 @@
 # Este doc esta para guardar codigos creados que, no necesariamente
 # estaban para calcular. Por ejemplo dialogo o wear a las listas.
-
+# Este documento formalmente se encargara de contener todos los codigos
+# relacionados desde con interaccion, hasta lenguaje (xd)
+########################################################################################################################
+########################################################################################################################
 # Librerias usadas
 import numpy as np
 import matplotlib as plt
 import math
-
+########################################################################################################################
+########################################################################################################################
+# Funciones de texto o interaccion
 
 # Funcion que toma lista que deberia ser numero pero estan en str.
 # Esta para casos como los inputs, en que solo reciben (y si no los transforman)
@@ -24,13 +29,8 @@ def racista(lista):
     return tetas
 
 
-
-# print(obo)
-# print('arriba', obo[0])
-# print('abajo', obo[1])
-# Esta abominacion del demonio se deberia de encargar de iterar los datos solicitados.
-# Recibe la cantidad de datos que le vas a meter por la raja y te pide esa cantidad 
-# de veces los datos
+# Funcion la cual te pide una cantidad "cantDatos" veces un dato
+# repetido
 def dialogo(cantDatos):
     canWena = int(cantDatos)
     tot = []
@@ -46,4 +46,5 @@ def dialogo(cantDatos):
             i = i+1
         total = tot
     return total
-    
+########################################################################################################################
+########################################################################################################################
