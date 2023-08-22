@@ -8,8 +8,6 @@
 # Librerias
 # No puede haber un coigo descente sin librerias....(alerta de flojo jeje) 
 import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
 # import math
 # import sympy as sym
 import tocomple as italiano

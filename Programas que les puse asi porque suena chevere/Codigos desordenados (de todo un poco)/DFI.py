@@ -6,10 +6,8 @@
 ########################################################################################################################
 # Librerias usadas
 import numpy as np
-import matplotlib as plt
-import math
-import humanistas as lenguaje
-import tocomple as italiano
+
+
 ########################################################################################################################
 ########################################################################################################################
 # Capacitancias y/o condensadores en circuitos electricos
@@ -63,7 +61,6 @@ def capacitanciaEq(totalcapac, tipox, i=0):
         return ceq
     else: 
         return 'momento xd'
-
 
 # Clalcula el error
 
