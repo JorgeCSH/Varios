@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 # Codigo ####################################################################################################
 #############################################################################################################
 
+# TEST PARA VER SI SE HIZO BIEN LA COPIA DEL REPOSITORIO
+
 def prioridad(creditos_curso, notas, creditos_aprobados, semestres_cursados, creditos_reprobados):
 
     if not len(creditos_curso) == len(notas):
