@@ -43,15 +43,15 @@ def prioridad(creditos_curso, notas, creditos_aprobados, semestres_cursados, cre
         return prioridad
 
 
-semestres_cursados = 3
+semestres_cursados = 4
 primer_semestre = [[6, 6, 6, 6, 3, 3], [4.9, 4.8, 6.3, 6.1, 6.6, 5.5], []]
 segundo_semestre = [[6, 6, 6, 6, 3, 3], [5.8, 5.6, 6.1, 5.8, 6.2, 5.6], []]
 tercer_semestre = [[6, 6, 6, 6, 6], [4.5, 4.6, 5.2, 5.0, 5.4], []]
-#cuarto_semestre = [[6, 6, 6, 6, 3 , 3], [], []]
-cr_curso = primer_semestre[0]+segundo_semestre[0]+tercer_semestre[0]#+cuarto_semestre[0]
-notas = primer_semestre[1]+segundo_semestre[1]+tercer_semestre[1]#+cuarto_semestre[1]
+cuarto_semestre = [[6, 6, 6, 6, 3 , 3], [6.0, 4.6, 5.4, 5.3, 5.2, 6.6], []]
+cr_curso = primer_semestre[0]+segundo_semestre[0]+tercer_semestre[0]+cuarto_semestre[0]
+notas = primer_semestre[1]+segundo_semestre[1]+tercer_semestre[1]+cuarto_semestre[1]
 cr_aprobados = cr_curso
-cr_reprobado = primer_semestre[2]+segundo_semestre[2]+tercer_semestre[2]#+cuarto_semestre[2]
+cr_reprobado = primer_semestre[2]+segundo_semestre[2]+tercer_semestre[2]+cuarto_semestre[2]
 print()
 
 prioridad_Final = prioridad(cr_curso, notas, cr_aprobados, semestres_cursados, cr_reprobado)
@@ -68,17 +68,23 @@ prior3 = prioridad(primer_semestre[0]+segundo_semestre[0]+tercer_semestre[0],
                    primer_semestre[0]+segundo_semestre[0]+tercer_semestre[0], 3,
                             primer_semestre[2]+segundo_semestre[2]+tercer_semestre[2])
 
-prioridades_por_semestre = [prior1, prior2, prior3]
-semestres = [1, 2, 3]
+prior4 = prioridad(primer_semestre[0]+segundo_semestre[0]+tercer_semestre[0]+cuarto_semestre[0],
+                            primer_semestre[1]+segundo_semestre[1]+tercer_semestre[1]+cuarto_semestre[1],
+                   primer_semestre[0]+segundo_semestre[0]+tercer_semestre[0]+cuarto_semestre[0], 4,
+                            primer_semestre[2]+segundo_semestre[2]+tercer_semestre[2]+cuarto_semestre[2])
+
+prioridades_por_semestre = [prior1, prior2, prior3, prior4]
+semestres = [1, 2, 3, 4]
 print()
 print('Las proridades que se han tenido en el transcurso de la carrera: ')
 print('-> 1er semestre '+str(prioridades_por_semestre[0]))
 print('-> 2do semestre '+str(prioridades_por_semestre[1]))
 print('-> 3er semestre '+str(prioridades_por_semestre[2]))
+print('-> 4er semestre '+str(prioridades_por_semestre[3]))
 
 
-prioridades_por_semestregraf = [prior1, prior2, prior3, prior3, prior3, prior3, prior3, prior3, prior3, prior3, prior3]
-prioridades_por_semestregraf2 = [prior1, prior2, prior3, 0, 0, 0, 0, 0, 0, 0, 0]
+prioridades_por_semestregraf = [prior1, prior2, prior3, prior4, prior4, prior4, prior4, prior4, prior4, prior4, prior4]
+prioridades_por_semestregraf2 = [prior1, prior2, prior3, prior4, 0, 0, 0, 0, 0, 0, 0]
 semestresgraf = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 plt.figure(figsize=(6,5))
 plt.plot(semestresgraf,prioridades_por_semestregraf, "green",label="Prioridades")
