@@ -1,6 +1,3 @@
-
-
-# Ahora algo mas profesional
 def nice(i=1):
     numero = int(input('Inserte Numero '))
     while not numero == 69:
@@ -12,4 +9,4 @@ def nice(i=1):
             print('Te demoraste ' + str(i) + ' intentos en darte cuenta de esto, nice')
 
 
-
+nice()
