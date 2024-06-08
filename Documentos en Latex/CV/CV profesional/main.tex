@@ -1,0 +1,123 @@
+\input{setup/preamble.sty}
+\input{setup/macros.sty}
+
+% this template consists of 3 files
+% - main .tex file  (this)
+% - preamble.sty    packages and color definitions
+% - macros.sty      defines the macros for the entries
+
+\begin{document}
+    %%% TItle %%%
+    \begin{tcolorbox}[height=0.19\textheight,colframe=lightgrey,colback=lightgrey]
+        \begin{minipage}{0.81\textwidth} % Name and Contact Info
+            \vspace{4em}
+            \name{Jorge Cummins Holger}{}
+            \vspace{2em}
+            \email{jorge.cummins.hs@gmail.com} %$\cdot$
+            \phone{+56 9 5663 8865} \par \vspace{0.5em}
+            \address{Santiago, Region Metropolitana, Chile} %$\cdot$
+            \github{https://github.com/JorgeCSH}{JorgeCSH}
+        \end{minipage}
+        \begin{minipage}{0.177\textwidth} % Picture Area
+            \includegraphics[width=1\textwidth, trim={0 0.8cm 0cm 0}, clip]{example-image-a} % Picture
+        \end{minipage} \hfill
+    \end{tcolorbox}
+
+    %%% Sections %%%
+    \begin{minipage}{0.7125\textwidth} % Main Panel (e.g. Education, Work Experience)
+        \begin{tcolorbox}[height=0.8\textheight, grow to left by=0.55cm,colframe=white,colback=white]
+
+            %%%%%%%%%%%% Education %%%%%%%%%%%%
+            \mySection{Education}
+            \entryFocusDesc{01.2018 - 01.2020}
+            {Master of Computer Science}{at Best University}
+            {Focus on software}
+            { \begin{compactitem}[-]
+                \item Average: 5.5
+                \item \raggedright{Thesis: A very cool thesis title}
+            \end{compactitem}
+            Further Projects:
+            \begin{compactitem}[-]
+                \item This is a project
+                \item This is another project
+            \end{compactitem}
+            }
+
+            \entryDesc{01.2013 - 01.2017}
+            {Bachelor of Computer Science}{at Best University}
+            {\begin{compactitem}[-]
+                \item Average: 5.5
+                \item Thesis: A thesis title
+            \end{compactitem}
+            Further Projects:
+            \begin{compactitem}[-]
+                \item This is a project
+                \item This is another project
+            \end{compactitem}
+            }
+        
+            \entryDesc{01.2009 - 01.2013}
+            {High School}{at Some School}
+            {\begin{compactitem}[-]
+                \item {Average: 5.5}
+                \item Some remark 
+            \end{compactitem}}
+
+            %%%%%%%%%%%% Work experience %%%%%%%%%%%%
+            \mySection{Work experience}
+            \entryFocusDesc{01.2020 - dato}
+            {Job Title}{at Cool Company}
+            {Development, requirements engineering, consulting}
+            {\begin{compactitem}[-]
+                \item First work item
+                \item Second work item
+                \item Third work items
+                \item Tools: IntelliJ, Jenkins, Docker
+            \end{compactitem}
+            }
+            
+            \entryDesc{01.2017 - 01.2018}
+            {Software Engineering Intern}{at That Company}
+            {\begin{compactitem}[-]
+                \item First work item
+                \item Second work item
+                \item Tools: IntelliJ, Jenkins, Docker
+            \end{compactitem}
+            }
+            
+            %%%%%%%%%%%% Publications %%%%%%%%%%%%
+            \mySection{Publications}
+            \entryFocus{02.2020}
+            {Book Title}
+            {Lena Meier, Author Two}
+
+            %%%%%%%%%%%% Certificates %%%%%%%%%%%%
+            \mySection{Certificates}
+            \entry{01.2023}{First Certificate}
+
+            %%%%%%%%%%%% Interests %%%%%%%%%%%%
+            \mySection{Interests}
+            \entryNoDate{Interest, Interest}
+
+        \end{tcolorbox}
+    \end{minipage}
+    \begin{minipage}{0.23\textwidth} % Side Panel (e.g. Skills, Links, Languages, etc.)
+        \begin{tcolorbox}[height=0.8\textheight, grow to right by=0.5cm, colback=accent,colframe=accent,arc=1mm]
+            % Skills, the skill level is drawn as bars, input: skill name and an array starting from 0 and ending before 4
+            \vspace{0.5em}
+            \subsection*{Programming Skills}
+                \skill{Java}{5}
+                \skill{LaTeX}{5}
+                \skill{SQL}{4}
+                \skill{Python}{2}
+                \skill{JavaScript}{2}
+
+            \vspace{-2em}
+            \subsection*{Languages}
+                \skill{German (Native tongue)}{5}
+                \skill{English (C2 Proficiency)}{4}
+                \skill{Italian}{1}
+        \end{tcolorbox}
+    \end{minipage}
+
+\end{document}

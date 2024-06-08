@@ -1,0 +1,59 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% IMPORTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,onesize,a4paper,titlepage]{article}
+
+%%%%%%%%%%%%%%% Formatting %%%%%%%%%%%%%%% 
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry} % Margins
+\usepackage{sectsty} % Custom Sections
+\usepackage{paralist} % For compactitem
+
+%%%%%%%%%%%%%%% Font %%%%%%%%%%%%%%% 
+%\usepackage{Archivo}
+\usepackage[T1]{fontenc} 
+\renewcommand{\familydefault}{\sfdefault} % Set Helvetica default
+
+%%%%%%%%%%%%%%% Graphics %%%%%%%%%%%%%%% 
+\usepackage{fontawesome5} % Icons
+\usepackage{graphicx} % Images
+\usepackage[most]{tcolorbox} % Color Box
+\usepackage{xcolor} % Colors
+\usepackage{tikz} % For Drawing Shapes
+\tcbuselibrary{breakable}
+
+%%%%%%%%%%%%%%% Miscelanous %%%%%%%%%%%%%%% 
+\usepackage{lipsum} % Lorem Ipsum
+\usepackage{hyperref} % For Hyperlinks
+
+%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%% 
+%\definecolor{accent}{HTML}{9fbfc0} % Accent color
+\definecolor{accent}{HTML}{789ABE} % Accent color
+\definecolor{lightgrey}{HTML}{f2f2f2} % Title color
+\definecolor{skillbar}{HTML}{ffffff} % Empty skill bars
+
+%%%%%%%%%%%%%%% Section Format %%%%%%%%%%%%%%% 
+
+% Change font of \section command
+\sectionfont{
+    \Large
+    \fontseries{m}\selectfont 
+    \sectionrule{0pt}{0pt}{-8pt}{1pt}
+}
+
+\subsectionfont{
+    \large
+    \fontseries{m}\selectfont 
+    \sectionrule{0pt}{0pt}{-8pt}{1pt}
+}
+
+%%%%%%%%%%%%%%% Margins and Headers %%%%%%%%%%%%%%%
+\geometry{
+  a4paper,
+  left=7mm,
+  right=7mm,
+  bottom=10mm,
+  top=10mm
+}
+
+\pagestyle{empty} % Empty Headers
+
