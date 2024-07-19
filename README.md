@@ -6,6 +6,6 @@ Corresponde a mi repositorio personal, codigos sin sentido, documentos, posibles
 La verdad que no, es personal
 
 ## Extras
-El desorden es porque originalmente este repositorio tenia otra funcion que se fue dejando de lado, de esta forma paso a ser un repositorio lleno de codigos "aleatorios", estos se dejaron en una directorio llamado "".
+El desorden es porque originalmente este repositorio tenia otra funcion que se fue dejando de lado, de esta forma paso a ser un repositorio lleno de codigos "aleatorios", estos se dejaron en una directorio llamado "```> Extras```".
 
 
